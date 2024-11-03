@@ -1,6 +1,7 @@
 import {useEffect, useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters/index.js';
+import Logo from './Logo/index.js'
 import { Link } from 'react-router-dom';
 import './index.scss';
 
@@ -62,7 +63,7 @@ const Home = () => {
                 </h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-
+        <Logo />
         </div>
     )
 }
