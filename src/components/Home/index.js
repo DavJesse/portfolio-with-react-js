@@ -1,9 +1,10 @@
-import {useEffect, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters/index.js';
 import Logo from './Logo/index.js'
 import { Link } from 'react-router-dom';
 import './index.scss';
+import { Loader } from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,12 +32,15 @@ const Home = () => {
     ]
 
     useEffect(() => {
-        return setTimeout(() => {
+        const timer = setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 4000)
+
+        return () => clearTimeout(timer)
     }, [])
 
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -65,6 +69,8 @@ const Home = () => {
             </div>
         <Logo />
         </div>
+        <Loader type="line-spin-fade-loader"/>
+        </>
     )
 }
 
