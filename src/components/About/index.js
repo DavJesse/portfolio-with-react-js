@@ -49,7 +49,7 @@ const About = () => {
             <div className='stage-cube-cont'>
                 <div className='cubespinner'>
                     <div className='face1'>
-                        <FontAwesomeIcon icon={faHtml5} color='#DD0031' />
+                        <FontAwesomeIcon icon={faHtml5} color='#F06529' />
                     </div>
                     <div className='face2'>
                         <FontAwesomeIcon icon={faCss3} color='#28A4D9' />
@@ -58,7 +58,7 @@ const About = () => {
                         <FontAwesomeIcon icon={faReact} color='#5ED4F4' />
                     </div>
                     <div className='face4'>
-                        <FontAwesomeIcon icon={faGolang} color='#28BEB0' />
+                        <FontAwesomeIcon icon={faGolang} color='#00ADD8' />
                     </div>
                     <div className='face5'>
                         <FontAwesomeIcon icon={faJsSquare} color='#EFD91D' />
