@@ -1,3 +1,4 @@
+import {useEffect, useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters/index.js';
 import { Link } from 'react-router-dom';
@@ -5,8 +6,34 @@ import './index.scss';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['D', 'a', 'v', 'i', 'd', 'J', 'e', 's', 's', 'e']
-    const jobArray = ['s', 'o', 'f', 't', 'w', 'a', 'r', 'e', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+    const nameArray = ['D', 'a', 'v', 'i', 'd', ' ', 'J', 'e', 's', 's', 'e']
+    const jobArray = [
+        's',
+        'o',
+        'f',
+        't',
+        'w',
+        'a',
+        'r',
+        'e',
+        ' ',
+        'd',
+        'e',
+        'v',
+        'e',
+        'l',
+        'o',
+        'p',
+        'e',
+        'r',
+        '.',
+    ]
+
+    useEffect(() => {
+        return setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+    }, [])
 
     return (
         <div className="container home-page">
