@@ -30,6 +30,29 @@ const Contact = () => {
                     I'm interested in new opportunities in freelance - especially those abitious or extensive projects
                     However, if you have other questions, requests, or just want to say hi; don't hesitate to contact me via the form below.
                 </p>
+
+                <div className='contact-form'>
+                    <form>
+                        <ul>
+                            <li className='half'>
+                                <input type='text' name='name' placeholder='Name' required />
+                            </li>
+                            <li className='half'>
+                                <input type='email' name='email' placeholder='Email' required />
+                            </li>
+                            <li>
+                                <input type='text' name='subject' placeholder='Subject' required />
+                            </li>
+                            <li>
+                                <textarea name='message' placeholder='Message' required />
+                            </li>
+                            <li>
+                                <input type='submit' className='flat-button' value="SEND" />
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
             </div>
         </div>
         <Loader type='line-spin-fade-loader' />
