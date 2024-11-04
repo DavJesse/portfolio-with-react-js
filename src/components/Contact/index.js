@@ -26,6 +26,10 @@ const Contact = () => {
                     indx={15}
                     />
                 </h1>
+                <p>
+                    I'm interested in new opportunities in freelance - especially those abitious or extensive projects
+                    However, if you have other questions, requests, or just want to say hi; don't hesitate to contact me via the form below.
+                </p>
             </div>
         </div>
         <Loader type='line-spin-fade-loader' />
