@@ -10,7 +10,7 @@ const Contact = () => {
 
     useEffect(() => {
       emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
-      
+
         const timer = setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
@@ -92,6 +92,18 @@ const Contact = () => {
             </form>
 
                 </div>
+            </div>
+
+            <div className='info-map'>
+            David Jesse Odhiambo,
+            <br />
+            Kenya,
+            <br />
+            Lake Basin Mall, Vihiga RD
+            <br />
+            Kisumu, Kenya
+            <br />
+            <span>jesseomolo@gmail.com</span>
             </div>
         </div>
         <Loader type='line-spin-fade-loader' />
