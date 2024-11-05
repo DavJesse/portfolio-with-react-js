@@ -9,6 +9,8 @@ const Contact = () => {
     const form = useRef()
 
     useEffect(() => {
+      emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+      
         const timer = setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
@@ -16,11 +18,17 @@ const Contact = () => {
         return () => clearTimeout(timer)
         
     }, [])
+    
 
     const sendEmail = (e) => {
         e.preventDefault()
     
-        emailjs.sendForm('service_5m89seh', 'template_vj77j8r', form.current, 'user_cXjYfZbgqg35YFapt')
+        emailjs.sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,       
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,      
+          form.current,                                   
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        )
         .then(
             () => {
                 alert('Message successfully sent!');
