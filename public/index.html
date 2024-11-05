@@ -40,13 +40,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
       <!-- emailjs -->
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-  (function(){
-      emailjs.init("pVFKzuC-3T7UFJZ5Ad_ND");
-  })();
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "user_cXjYfZbgqg35YFapt",
+            });
+        })();
+    </script>
 </script>
   </body>
 </html>
