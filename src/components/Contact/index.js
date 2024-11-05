@@ -2,6 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { useEffect, useState, useRef } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
@@ -104,6 +105,15 @@ const Contact = () => {
             Kisumu, Kenya
             <br />
             <span>jesseomolo@gmail.com</span>
+            </div>
+
+            <div className="map-wrap">
+              <MapContainer center={[-0.06566843687855212, 34.774370409850874]} zoom={13}>
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                <Marker position={[-0.06566843687855212, 34.774370409850874]}>
+                  <Popup>Jesse works here, pop up for a cold glass of fresh juice :)</Popup>
+                </Marker>
+              </MapContainer>
             </div>
         </div>
         <Loader type='line-spin-fade-loader' />
