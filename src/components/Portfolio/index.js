@@ -63,7 +63,7 @@ const Portfolio = () => {
                 </h1>
                 <div>{renderPortfolio(portfolio)}</div>
             </div>
-            <Loader type="pacman" />
+            <Loader type="line-spin-fade-loader" />
         </>
     );
 }
