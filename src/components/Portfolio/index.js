@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
+import groupieTrackerImage from '../../assets/images/groupie-tracker.png';
+
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -34,7 +36,12 @@ const Portfolio = () => {
                                 <img 
                                     src={port.image}
                                     className="portfolio-image"
-                                    alt="portfolio" />
+                                    alt={port.image}
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = "../../assets/images/groupie-tracker-pc-mockup.png";
+                                    }}
+                                    />
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
@@ -73,10 +80,10 @@ export default Portfolio;
 // Dummy data to replace Firebase data
 const dummyPortfolioData = [
     {
-        name: "Project 1",
-        description: "Web Development",
-        image: "/path/to/image1.jpg",
-        url: "https://project1.com"
+        name: "Groupie Tracker",
+        description: "A web app that connects fans to their favorite artists.\n#WebDevelopment #APIs #JSON #Go #JavaScript",
+        image: groupieTrackerImage,
+        url: "https://github.com/DavJesse/band-n-fan.git"
     },
     {
         name: "Project 2",
