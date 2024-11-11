@@ -82,13 +82,13 @@ export default Portfolio;
 const dummyPortfolioData = [
     {
         name: "Groupie Tracker",
-        description: "A web app that connects fans to their favorite artists.\n#WebDevelopment #APIs #JSON #Go #JavaScript",
+        description: "A web app that connects fans to their favorite artists. #WebDevelopment #APIs #JSON #Go #JavaScript",
         image: groupieTrackerImage,
         url: "https://github.com/DavJesse/band-n-fan.git"
     },
     {
         name: "Ascii Art Generator",
-        description: "A web page that displays printable asci art characters with creatve",
+        description: "A web page that displays printable asci art characters with even more creative characters. #WebDevelopment #Docker #HTML #CSS"
         image: asciiArtImage,
         url: "https://github.com/DavJesse/ascii-print-style.git"
     },
