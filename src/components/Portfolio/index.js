@@ -88,7 +88,7 @@ const dummyPortfolioData = [
     },
     {
         name: "Ascii Art Generator",
-        description: "A web page that displays printable asci art characters with even more creative characters. #WebDevelopment #Docker #HTML #CSS"
+        description: "A web page that displays printable asci art characters with even more creative characters. #WebDevelopment #Docker #HTML #CSS",
         image: asciiArtImage,
         url: "https://github.com/DavJesse/ascii-print-style.git"
     },
