@@ -3,6 +3,7 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import groupieTrackerImage from '../../assets/images/groupie-tracker.png';
+import asciiArtImage from '../../assets/images/ascii-art.png';
 
 
 const Portfolio = () => {
@@ -86,10 +87,10 @@ const dummyPortfolioData = [
         url: "https://github.com/DavJesse/band-n-fan.git"
     },
     {
-        name: "Project 2",
-        description: "Mobile App",
-        image: "/path/to/image2.jpg",
-        url: "https://project2.com"
+        name: "Ascii Art Generator",
+        description: "A web page that displays printable asci art characters with creatve",
+        image: asciiArtImage,
+        url: "https://github.com/DavJesse/ascii-print-style.git"
     },
     // Add more dummy projects as needed
 ];
