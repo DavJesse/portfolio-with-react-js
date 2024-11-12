@@ -4,6 +4,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import groupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
 import asciiArtImage from '../../assets/images/ascii-art.png';
+import calculatorImage from '../../assets/images/calculator.png';
 
 
 const Portfolio = () => {
@@ -78,19 +79,23 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-// Dummy data to replace Firebase data
 const dummyPortfolioData = [
     {
         name: "Groupie Tracker",
-        description: "A web app that connects fans to their favorite artists. #WebDevelopment #APIs #JSON #Go #JavaScript",
+        description: "A web app that connects fans to their favorite artists. #FullStackDevelopment #APIs #JSON #Go #JavaScript",
         image: groupieTrackerImage,
         url: "https://github.com/DavJesse/band-n-fan.git"
     },
     {
         name: "Ascii Art Generator",
-        description: "A web page that displays printable asci art characters with even more creative characters. #WebDevelopment #Docker #HTML #CSS",
+        description: "A web page that displays printable asci art characters with even more creative characters. #FullStackDevelopment #Docker #HTML #CSS",
         image: asciiArtImage,
         url: "https://github.com/DavJesse/ascii-print-style.git"
     },
-    // Add more dummy projects as needed
+    {
+        name: "Basic Calculator",
+        description: "A web-based calculator that can handle basic arithmetic. #FrontEndDevelopment #JavaScript #HTML #CSS",
+        image: calculatorImage,
+        url: "https://github.com/DavJesse/my-calculator-app.git"
+    },
 ];
