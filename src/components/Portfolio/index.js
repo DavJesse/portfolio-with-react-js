@@ -6,6 +6,7 @@ import GroupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
 import AsciiArtImage from '../../assets/images/ascii-art.png';
 import CalculatorImage from '../../assets/images/calculator.png';
 import TetrisImage from '../../assets/images/tetris-optimizer.png';
+import AutocorrectImage from '../../assets/images/autocorrect.png';
 
 
 const Portfolio = () => {
@@ -101,8 +102,14 @@ const dummyPortfolioData = [
     },
     {
         name: "Tetris Optimizer",
-        description: "A program that compacts a set of tetrominoes to their smallest possible square. #Go #Algorithm #Backtracking #Data Structures",
+        description: "A program that compacts a set of tetrominoes to their smallest possible square. #Go #Algorithm #Backtracking #DataStructures",
         image: TetrisImage,
         url: "https://github.com/DavJesse/tetris-solver.git"
+    },
+    {
+        name: "Autocorrect with Go",
+        description: "A program that autocarrects text based on a limited set of propmts issued in parenthesis. #BasicProgramming #Go #DataStructures #StringManipulation",
+        image: AutocorrectImage,
+        url: "https://github.com/DavJesse/autocorrect-with-go.git"
     },
 ];
