@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import groupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
-import asciiArtImage from '../../assets/images/ascii-art.png';
-import calculatorImage from '../../assets/images/calculator.png';
+import GroupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
+import AsciiArtImage from '../../assets/images/ascii-art.png';
+import CalculatorImage from '../../assets/images/calculator.png';
+import TetrisImage from '../../assets/images/tetris-optimizer.png';
 
 
 const Portfolio = () => {
@@ -83,19 +84,25 @@ const dummyPortfolioData = [
     {
         name: "Groupie Tracker",
         description: "A web app that connects fans to their favorite artists. #FullStackDevelopment #APIs #JSON #Go #JavaScript",
-        image: groupieTrackerImage,
+        image: GroupieTrackerImage,
         url: "https://github.com/DavJesse/band-n-fan.git"
     },
     {
         name: "Ascii Art Generator",
         description: "A web page that displays printable asci art characters with even more creative characters. #FullStackDevelopment #Docker #HTML #CSS",
-        image: asciiArtImage,
+        image: AsciiArtImage,
         url: "https://github.com/DavJesse/ascii-print-style.git"
     },
     {
         name: "Basic Calculator",
         description: "A web-based calculator that can handle basic arithmetic. #FrontEndDevelopment #JavaScript #HTML #CSS",
-        image: calculatorImage,
+        image: CalculatorImage,
         url: "https://github.com/DavJesse/my-calculator-app.git"
+    },
+    {
+        name: "Tetris Optimizer",
+        description: "A program that compacts a set of tetrominoes to their smallest possible square. #Go #Algorithm #Backtracking #Data Structures",
+        image: TetrisImage,
+        url: "https://github.com/DavJesse/tetris-solver.git"
     },
 ];
