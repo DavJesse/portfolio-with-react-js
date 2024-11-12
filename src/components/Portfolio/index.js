@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import groupieTrackerImage from '../../assets/images/groupie-tracker.png';
+import groupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
 import asciiArtImage from '../../assets/images/ascii-art.png';
 
 
