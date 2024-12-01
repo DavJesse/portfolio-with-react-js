@@ -9,6 +9,40 @@
     h1.page-title {
         margin-left: 100px;
         margin-top: 100px;
+<<<<<<< HEAD
+=======
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #ffd700;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 40px;
+        left: 10px;
+
+        &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+
+            &::after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-left: 20px;
+                left: -30px;
+                bottom: -20px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+
+>>>>>>> 8b7a0d3df80bfdb3625905a1d7f05d9de75f6616
     }
 
     .images-container {
@@ -42,7 +76,11 @@
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             background: linear-gradient(
                 180deg,
+<<<<<<< HEAD
                 rgba(0, 0, 0, 0.2) 0,
+=======
+                rgba(0, 0, 0, 0.7) 0,
+>>>>>>> 8b7a0d3df80bfdb3625905a1d7f05d9de75f6616
                 rgba(0, 0, 0, 1)
             );
             bottom: -70px;

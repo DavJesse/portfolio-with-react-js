@@ -3,7 +3,7 @@ import { Loader } from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGitAlt, faCss3, faGolang, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faCss3, faGolang, faHtml5, faJsSquare, faDocker } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -60,7 +60,7 @@ const About = () => {
                         <FontAwesomeIcon icon={faCss3} color='#28A4D9' />
                     </div>
                     <div className='face3'>
-                        <FontAwesomeIcon icon={faReact} color='#5ED4F4' />
+                        <FontAwesomeIcon icon={faDocker} color='#5ED4F4' />
                     </div>
                     <div className='face4'>
                         <FontAwesomeIcon icon={faGolang} color='#00ADD8' />
