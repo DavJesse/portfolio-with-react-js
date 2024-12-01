@@ -2,15 +2,12 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-<<<<<<< HEAD
-=======
 import GroupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
 import AsciiArtImage from '../../assets/images/ascii-art.png';
 import CalculatorImage from '../../assets/images/calculator.png';
 import TetrisImage from '../../assets/images/tetris-optimizer.png';
 import AutocorrectImage from '../../assets/images/autocorrect.png';
 
->>>>>>> 8b7a0d3df80bfdb3625905a1d7f05d9de75f6616
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -43,16 +40,12 @@ const Portfolio = () => {
                                 <img 
                                     src={port.image}
                                     className="portfolio-image"
-<<<<<<< HEAD
-                                    alt="portfolio" />
-=======
                                     alt={port.image}
                                     onError={(e) => {
                                         e.target.onerror = null;
                                         e.target.src = "../../assets/images/groupie-tracker-pc-mockup.png";
                                     }}
                                     />
->>>>>>> 8b7a0d3df80bfdb3625905a1d7f05d9de75f6616
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
@@ -88,23 +81,6 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-<<<<<<< HEAD
-// Dummy data to replace Firebase data
-const dummyPortfolioData = [
-    {
-        name: "Project 1",
-        description: "Web Development",
-        image: "/path/to/image1.jpg",
-        url: "https://project1.com"
-    },
-    {
-        name: "Project 2",
-        description: "Mobile App",
-        image: "/path/to/image2.jpg",
-        url: "https://project2.com"
-    },
-    // Add more dummy projects as needed
-=======
 const dummyPortfolioData = [
     {
         name: "Groupie Tracker",
@@ -136,5 +112,4 @@ const dummyPortfolioData = [
         image: AutocorrectImage,
         url: "https://github.com/DavJesse/autocorrect-with-go.git"
     },
->>>>>>> 8b7a0d3df80bfdb3625905a1d7f05d9de75f6616
 ];
