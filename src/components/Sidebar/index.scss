@@ -125,6 +125,10 @@
             }
         }
     }
+
+    .hamburger-icon {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -147,15 +151,27 @@
             margin: 0;
             z-index: 2;
             position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
     
             &.mobile-show {
                 display: block;
             }
     
             a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                display: block;
+                text-align: center;
+                font-size: 28px;
+                color: #4d4d4e;
+                line-height: 51px;
+                height: 51px;
+                position: relative;
+                top: 30%;
+                padding: 10px 0;
+                transition: color 0.3s ease-out;
             }
     
             a:after {
