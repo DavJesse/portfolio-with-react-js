@@ -1,3 +1,4 @@
+// Import necessary modules and dependencies
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
@@ -7,13 +8,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope, faSuitcase, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
+// Component definition for Sidebar
 const Sidebar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    // State to manage the mobile menu toggle (open/close)
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
-
+    
+    // Function to toggle the mobile menu state
     return (
         <div className="nav-bar">
             <Link className="logo" to="/">
@@ -84,4 +88,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default Sidebar; // Export the Sidebar component
