@@ -129,60 +129,65 @@
 
 @media screen and (max-width: 1200px) {
     .nav-bar { 
-      background: transparent;
-      position: initial;
-      height: auto;
-      min-height: auto;
-  
-       ul, nav {
-        display: none;
-       }
-  
-       nav {
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: #181818;
-        height: 100%;
-        margin: 0;
-        z-index: 2;
-        position: fixed;
-  
-        &.mobile-show {
-          display: block;
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+    
+        ul, nav {
+            display: none;
         }
-  
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+    
+        nav {
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #181818;
+            height: 100%;
+            margin: 0;
+            z-index: 2;
+            position: fixed;
+    
+            &.mobile-show {
+                display: block;
+            }
+    
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            a:after {
+                opacity: 1;
+                position: initial;
+                width: auto;
+                margin-left: 10px;
+            }
+    
+            a svg {
+                opacity: 1 !important;
+            }
         }
-  
-        a:after {
-          opacity: 1;
-          position: initial;
-          width: auto;
-          margin-left: 10PX;
+    
+        .hamburger-icon {
+            position: absolute;
+            top: 15px;
+            left: 15px; // Move hamburger icon to the left
+            display: block;
+            font-size: 28px; // Ensure visibility
+            color: #ffd700; // Match your theme
+            z-index: 5; // Ensure it’s above the mobile menu
         }
-  
-        a svg {
-          opacity: 1 !important;
+    
+        .close-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px; // Keep close icon on the right
+            display: block;
+            font-size: 28px; // Ensure visibility
+            color: #ffd700; // Match your theme
+            z-index: 5; // Ensure it’s above the mobile menu
         }
-       }
-  
-       .hamburger-icon,
-       .close-icon {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        display: block;
-        font-size: 28px; // Ensure visibility
-        color: #ffd700; // Match your theme
-        z-index: 5; // Ensure it’s above the mobile menu
-       }
-
-       .colose-icon {
-        display: block;
-       }
     }
-  }
+}
