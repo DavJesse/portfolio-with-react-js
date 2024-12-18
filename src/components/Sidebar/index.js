@@ -28,6 +28,7 @@ const Sidebar = () => {
                     exact="true"
                     activeclassname="active"
                     to="/"
+                    onClick={toggleMobileMenu}
                 >
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
