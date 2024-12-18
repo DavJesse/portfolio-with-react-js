@@ -172,10 +172,17 @@
   
        .hamburger-icon,
        .close-icon {
-          position: absolute;
-          top: 15px;
-          right: 15px;
-          display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: block;
+        font-size: 28px; // Ensure visibility
+        color: #ffd700; // Match your theme
+        z-index: 5; // Ensure it’s above the mobile menu
+       }
+
+       .colose-icon {
+        display: block;
        }
     }
   }
