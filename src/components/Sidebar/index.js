@@ -4,7 +4,7 @@ import './index.scss';
 import LogoJ from '../../assets/images/logo-jesse.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faSuitcase, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
@@ -21,16 +21,13 @@ const Sidebar = () => {
                 <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
             </Link>
             <div className="hamburger-icon" onClick={toggleMobileMenu}>
-                <span className={isMobileMenuOpen ? 'close-icon' : 'open-icon'}>
-                    {isMobileMenuOpen ? '✖' : '☰'}
-                </span>
+                <FontAwesomeIcon icon={isMobileMenuOpen ? faXmark : faBars} color='#ffd700' />
             </div>
             <nav className={isMobileMenuOpen ? 'mobile-show' : ''}>
                 <NavLink
                     exact="true"
                     activeclassname="active"
                     to="/"
-                    onClick={toggleMobileMenu}
                 >
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
