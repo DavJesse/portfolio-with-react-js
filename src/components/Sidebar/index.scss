@@ -182,6 +182,20 @@
                 opacity: 1 !important;
             }
         }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+           // top: 3px;
+            left: 50%;
+            transform: translateX(250%);
+
+            img.sub-logo {
+                display: none;
+            }
+        }
     
         .hamburger-icon {
             position: absolute;
