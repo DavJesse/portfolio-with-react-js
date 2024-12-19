@@ -47,6 +47,7 @@ const About = () => {
                         <li>Blockchain</li>
                         <li>Html</li>
                         <li>CSS</li>
+                        <li>AI Prompting</li>
                     </ul>
                 </p>
             </div>
