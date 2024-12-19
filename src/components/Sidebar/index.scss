@@ -175,10 +175,7 @@
             }
     
             a:after {
-                opacity: 1;
-                position: initial;
-                width: auto;
-                margin-left: 10px;
+                display: none;
             }
     
             a svg {
