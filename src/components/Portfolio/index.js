@@ -7,6 +7,7 @@ import AsciiArtImage from '../../assets/images/ascii-art.png';
 import CalculatorImage from '../../assets/images/calculator.png';
 import TetrisImage from '../../assets/images/tetris-optimizer.png';
 import AutocorrectImage from '../../assets/images/autocorrect.png';
+import DiaWiseImage from '../../assets/images/diawise.png';
 
 
 const Portfolio = () => {
@@ -82,6 +83,12 @@ const Portfolio = () => {
 export default Portfolio;
 
 const dummyPortfolioData = [
+    {
+        name: "DiaWise",
+        description: "A companion for persons living with or caring for patients of diabete. #HealthTech #FullStackDevelopment #APIs #MySQL #Go #JavaScript",
+        image: DiaWiseImage,
+        url: "https://diabetics-management-app.onrender.com"
+    },
     {
         name: "Groupie Tracker",
         description: "A web app that connects fans to their favorite artists. #FullStackDevelopment #APIs #JSON #Go #JavaScript",
