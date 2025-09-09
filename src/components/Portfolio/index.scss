@@ -92,7 +92,33 @@
             font-size: 14px;
             margin-bottom: 5px;
             color: #fff;
-            font-weight: 700;
+            font-weight: 600;
+            width: 95%;
+        }
+
+        .roles {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .roles-text {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .role-pill {
+            color: #022c43;
+            background-color: #ffd700;
+            padding: 8px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 2px 4px;
+            white-space: nowrap;
         }
 
         .btn {
@@ -115,6 +141,7 @@
         .btn:hover {
             transform: translateY(-3px);
             background: #ffd700;
+            color: #022c43;
         }
 
         &:after {
