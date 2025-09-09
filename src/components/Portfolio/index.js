@@ -6,8 +6,10 @@ import GroupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
 import AsciiArtImage from '../../assets/images/ascii-art.png';
 import CalculatorImage from '../../assets/images/calculator.png';
 import TetrisImage from '../../assets/images/tetris-optimizer.png';
-import AutocorrectImage from '../../assets/images/autocorrect.png';
+import StockFolio from '../../assets/images/stock-folio.png';
 import DiaWiseImage from '../../assets/images/diawise.png';
+import StudyDash from '../../assets/images/study-dash.png';
+import PortfolioSite from '../../assets/images/portfolio-site.png';
 
 
 const Portfolio = () => {
@@ -48,8 +50,18 @@ const Portfolio = () => {
                                     }}
                                     />
                                 <div className="content">
-                                    <p className="title">{port.name}</p>
-                                    <h4 className="description">{port.description}</h4>
+                                    <h4 className="title">{port.name}</h4>
+                                    <p className="description">{port.description}</p>
+                                    <div className="roles">
+                                        <p className="roles-text">Roles:</p>
+                                        {
+                                            port.roles.map((role) => {
+                                                return (
+                                                    <div className="role-pill" >{role}</div>
+                                                )
+                                            })
+                                        }
+                                        </div>
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}
@@ -84,39 +96,59 @@ export default Portfolio;
 
 const dummyPortfolioData = [
     {
+        name: "StockFolio",
+        description: "A stock portfolio tracking app. #RESTful-APIs #Finnhub-API #React #Node.js #Tailwind #JWT #TypeScript",
+        image: StockFolio,
+        roles: ["FullStack Developer"],
+        url: "https://stockfolio.fly.dev/"
+    },
+    {
+        name: "StudyDash",
+        description: "A web app that students in the Zone01 ecosystem can track their performances. #GraphQL #React #Node.js #Tailwind #JWT #JavaScript",
+        image: StudyDash,
+        roles: ["FullStack Developer"],
+        url: "https://study-dash-z01-demo.vercel.app/"
+    },
+    {
+        name: "Personal Portfolio Template",
+        description: "A configurable personal portfolio website. #Vite #Node.js #Tailwind #React #JavaScript",
+        image: PortfolioSite,
+        roles: ["FullStack Developer"],
+        url: "https://portfolio-templates-five.vercel.app/"
+    },
+    {
         name: "DiaWise",
-        description: "A companion for persons living with or caring for patients of diabete. #HealthTech #FullStackDevelopment #APIs #MySQL #Go #JavaScript",
+        description: "A companion for persons living with or caring for patients of diabete. #HealthTech #APIs #MySQL #Go #JavaScript",
         image: DiaWiseImage,
+        roles: ["Frontend Developer"],
         url: "https://diabetics-management-app.onrender.com"
     },
     {
         name: "Groupie Tracker",
-        description: "A web app that connects fans to their favorite artists. #FullStackDevelopment #APIs #JSON #Go #JavaScript",
+        description: "A web app that connects fans to their favorite artists. #APIs #JSON #Go #JavaScript",
         image: GroupieTrackerImage,
+        roles: ["FullStack Developer"],
         url: "https://github.com/DavJesse/band-n-fan.git"
     },
     {
         name: "Ascii Art Generator",
         description: "A web page that displays printable asci art characters with even more creative characters. #FullStackDevelopment #Docker #HTML #CSS",
         image: AsciiArtImage,
+        roles: ["Backend Developer"],
         url: "https://github.com/DavJesse/ascii-print-style.git"
     },
     {
         name: "Basic Calculator",
-        description: "A web-based calculator that can handle basic arithmetic. #FrontEndDevelopment #JavaScript #HTML #CSS",
+        description: "A web-based calculator that can handle basic arithmetic. #JavaScript #HTML #CSS",
         image: CalculatorImage,
+        roles: ["FullStack Developer"],
         url: "https://github.com/DavJesse/my-calculator-app.git"
     },
     {
         name: "Tetris Optimizer",
         description: "A program that compacts a set of tetrominoes to their smallest possible square. #Go #Algorithm #Backtracking #DataStructures",
         image: TetrisImage,
+        roles: ["Go Developer"],
         url: "https://github.com/DavJesse/tetris-solver.git"
-    },
-    {
-        name: "Autocorrect with Go",
-        description: "A program that autocarrects text based on a limited set of propmts issued in parenthesis. #BasicProgramming #Go #DataStructures #StringManipulation",
-        image: AutocorrectImage,
-        url: "https://github.com/DavJesse/autocorrect-with-go.git"
     },
 ];
