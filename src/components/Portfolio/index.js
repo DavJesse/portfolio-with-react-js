@@ -93,8 +93,8 @@ const dummyPortfolioData = [
     description:
       'A modern website with blog and content management system. #JavaScript #HTML #CSS',
     image: TajjjrImage,
-    roles: ['FullStack Developer'],
-    url: 'https://github.com/DavJesse/my-calculator-app.git',
+    roles: ['Frontend Developer'],
+    url: 'https://tajjj-nine.vercel.app/',
   },
   {
     name: 'StockFolio',
