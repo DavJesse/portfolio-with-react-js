@@ -4,7 +4,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import GroupieTrackerImage from '../../assets/images/groupie-tab-pc.png';
 import AsciiArtImage from '../../assets/images/ascii-art.png';
-import CalculatorImage from '../../assets/images/calculator.png';
+import CalculatorImage from '../../assets/images/tajjjr.png';
 import TetrisImage from '../../assets/images/tetris-optimizer.png';
 import StockFolio from '../../assets/images/stock-folio.png';
 import DiaWiseImage from '../../assets/images/diawise.png';
@@ -100,7 +100,7 @@ const dummyPortfolioData = [
         description: "A stock portfolio tracking app. #RESTful-APIs #Finnhub-API #React #Node.js #Tailwind #JWT #TypeScript",
         image: StockFolio,
         roles: ["FullStack Developer"],
-        url: "https://stockfolio.fly.dev/"
+        url: "https://stock-folio.onrender.com"
     },
     {
         name: "StudyDash",
@@ -138,8 +138,8 @@ const dummyPortfolioData = [
         url: "https://github.com/DavJesse/ascii-print-style.git"
     },
     {
-        name: "Basic Calculator",
-        description: "A web-based calculator that can handle basic arithmetic. #JavaScript #HTML #CSS",
+        name: "TAJJJR Landing Page",
+        description: "A modern website with blog and content management system. #JavaScript #HTML #CSS",
         image: CalculatorImage,
         roles: ["FullStack Developer"],
         url: "https://github.com/DavJesse/my-calculator-app.git"
